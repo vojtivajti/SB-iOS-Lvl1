@@ -4,6 +4,8 @@
 //
 //  Created by Михаил Петров on 16.01.2023.
 //
+import Foundation
+
 
 /*Задание 1
 Напишите функцию, которая принимает на вход два целых числа и выводит в консоль, равны они или нет. Должны выполняться следующие условия:
@@ -99,17 +101,9 @@ cubeValue(7)
 
 func cubeValue(_ sideValue: Int){
     switch sideValue {
-    case 1:
+    case 1, 2, 3:
         print("Проигрыш")
-    case 2:
-        print("Проигрыш")
-    case 3:
-        print("Проигрыш")
-    case 4:
-        print("Победа")
-    case 5:
-        print("Победа")
-    case 6:
+    case 4, 5, 6:
         print("Победа")
     default:
         print("У кубика только 6 граней!?")
